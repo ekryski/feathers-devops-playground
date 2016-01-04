@@ -1,0 +1,27 @@
+nginx:
+  image: jwilder/nginx-proxy
+  container_name: nginx-proxy
+  ports:
+    - "80:80"
+    - "443:443"
+  volumes:
+    - /var/run/docker.sock:/tmp/docker.sock:ro
+
+slackin:
+  build: ./slackin
+  container_name: feathers-slackin
+  env_file: .env
+  environment:
+    - VIRTUAL_HOST=slack.feathersjs.com
+    - PORT=3000
+  ports:
+    - "3000:3000"
+
+demo:
+  image: ekryski/feathers-demo
+  container_name: feathers-demo
+  environment:
+    - VIRTUAL_HOST=demo.feathersjs.com,todos.feathersjs.com
+    - PORT=8080
+  ports:
+    - "8080:8080"
