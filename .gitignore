@@ -1,0 +1,4 @@
+# Ignore sensitve variable files
+*.env
+*.tfvars
+*.tfplan
