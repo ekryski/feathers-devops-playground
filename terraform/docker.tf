@@ -42,7 +42,7 @@
 #    internal = 3000
 #    external = 3000
 #  }
-#  env = ["VIRTUAL_HOST=slack.feathersjs.com", "SLACK_ORG=feathersjs", #"SLACK_TOKEN=xoxp-8840553365-9785579233-17595328115-b06bbfa507"]
+#  env = ["VIRTUAL_HOST=slack.feathersjs.com", "SLACK_ORG=feathersjs", #"SLACK_TOKEN=<insert token>"]
 #}
 #
 #resource "docker_container" "feathers-demo" {
