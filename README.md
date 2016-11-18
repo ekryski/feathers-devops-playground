@@ -1,8 +1,8 @@
-# feathers-docker
+# feathers-devops-playground
 
 > A playground for Feathers infrastructure configurations
 
-This repos contains test/example configurations for deploying our Feathers infrastructure. It's not really for public consumption but we open source all the things in case someone finds this useful.
+This repos contains test/example configurations for deploying our Feathers infrastructure. It's not really for public consumption but we open source all the things in case someone finds this useful. It is **not** published to npm as a module.
 
 
 ## Consul
